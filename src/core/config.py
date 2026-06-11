@@ -2,6 +2,7 @@
 Lab 11 — Configuration & API Key Setup
 """
 import os
+from dotenv import load_dotenv
 
 
 def setup_api_key():
@@ -10,6 +11,9 @@ def setup_api_key():
         os.environ["GOOGLE_API_KEY"] = input("Enter Google API Key: ")
     os.environ["GOOGLE_GENAI_USE_VERTEXAI"] = "0"
     print("API key loaded.")
+
+    load_dotenv()
+    if ""
 
 
 # Allowed banking topics (used by topic_filter)
